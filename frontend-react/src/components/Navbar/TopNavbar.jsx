@@ -1,3 +1,10 @@
+/**
+ * File: TopNavBar.jsx
+ * Code for the top navigation bar element.
+ * @author Bach Tran
+ * @since 1.0
+ * @licence GPL-3.0
+ */
 import React from 'react'
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
