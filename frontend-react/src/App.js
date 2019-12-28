@@ -6,8 +6,6 @@
 import React from 'react';
 import './App.css';
 import Skeleton from "./components/Skeleton";
-import SignupForm from "./components/SignupForm";
-import Container from "react-bootstrap/Container";
 
 function App() {
   return (

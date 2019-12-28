@@ -8,8 +8,12 @@
  */
 import React from 'react'
 import TopNavbar from "./Navbar/TopNavbar";
-import './styles.css'
-import SignupForm from "./SignupForm";
+import './styles.css';
+
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {Home} from "./Pages/Home";
+import {About} from "./Pages/About";
+import {NoMatch} from "./Pages/NoMatch";
 
 /**
  * The skeletal structure of the canvas.
@@ -32,14 +36,16 @@ const items = [
 class Skeleton extends React.Component {
     render() {
         return (
-            <div>
-                <div>
+            <React.Fragment>
+                <BrowserRouter>
                     <TopNavbar />
-                </div>
-                <div className="Center-navigation">
-                    <SignupForm />
-                </div>
-            </div>
+                    <Switch>
+                        <Route exact path="/" component={Home} />
+                        <Route path="/about" component={About} />
+                        <Route component={NoMatch} />
+                    </Switch>
+                </BrowserRouter>
+            </React.Fragment>
         );
     }
 }
