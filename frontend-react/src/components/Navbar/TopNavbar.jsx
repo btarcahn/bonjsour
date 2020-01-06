@@ -26,6 +26,11 @@ class TopNavbar extends React.Component {
                 <Navbar bg="dark" expand="lg" variant="dark">
                     <Navbar.Brand href="/home">bonjsour</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Nav className="mr-auto">
+                        <Nav.Link href="login">Login</Nav.Link>
+                        <Nav.Link href="pricing">Pricing</Nav.Link>
+                        <Nav.Link href="connect">Connect</Nav.Link>
+                    </Nav>
                 </Navbar>
             </div>
         )
